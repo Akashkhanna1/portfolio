@@ -98,4 +98,16 @@
 text-decoration: underline;
 color: inherit;
 }
+@media only screen and (max-width: 768px) {
+  #paragraph {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #paragraph {
+    font-size: 10px;
+  }
+}
+
 
