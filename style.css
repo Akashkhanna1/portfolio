@@ -38,16 +38,15 @@
   float: right;
 }
 
-#nd{
-  background-color:lightgray;
-  overflow: auto;
-}
 #aboutme{
   text-align: center;
   font-family: 'Roboto Slab', serif;
-  background-color: black;
   margin-left: 20px;
+  
   size: 80px;
+}
+#aboutme a:hover{
+  background-color: black;
 }
 #paragraph{
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBOdkcUtDlUIP--MZ60TTJKnULcE2lNomunQ&usqp=CAU');
@@ -61,6 +60,8 @@
   background-size: cover;
   font-family: 'Roboto Slab', serif;
   font-size: 30px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 #image1{
   width: 100%;
@@ -84,9 +85,6 @@
   font-size: 20px;
   background-color: lightgrey; 
 }
-a:hover{
-  text-decoration: underline;
-}
 .sticky {
   position: fixed;
   top: 0;
@@ -95,4 +93,11 @@ a:hover{
 
 .sticky + .content {
   padding-top: 60px;
+}
+#icon, #icon:hover, #icon:focus, #icon:active {
+text-decoration: underline;
+color: inherit;
+}
+.nowrap {
+  white-space: nowrap ;
 }
