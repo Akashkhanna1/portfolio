@@ -13,12 +13,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="portfolio.js"></script>
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
 </head>
 <body>
 	<div class="navbar" id="mainnavbar">
-		<a href="#" ><i class="fa fa-fw fa-user"></i>Akash Khanna</a>
+		<a href="file:///C:/Users/Anjali/Documents/webdevelopment/portfolio.html" ><i class="fa fa-fw fa-user"></i>Akash Khanna</a>
   		<ul class="nav justify-content-end">
 		  <li class="nav-item">
 		    <a class="nav-link active" aria-current="page" href="https://www.linkedin.com/in/akash-khanna-24a7391a0/"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
@@ -35,7 +36,7 @@
 		</ul>
 	</div>
 	<div id="nd" class="navbar" id="mainnavbar">
-		<p id="aboutme"><a href=""> About me:</a></p>
+		<p id="aboutme"><a href="#paragraph"> About me:</a></p>
 	</div>
   <div class="quote">
     <p id="quote" ><strong>"Truth can only be found in one place: the code"</strong></p>
@@ -44,8 +45,8 @@
 		<img id=image1 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkLUH6GNYM79OcqRga9QIE_yOeGql-g3UmFjlumPssgxc8j4MxJwkfpMXklaz_r1gKbLE&usqp=CAU" class="img-fluid">
 		<img id="image2" src="https://storage.googleapis.com/aims-edu/images/000/001/088/lead/emile-perron-xrVDYZRGdw4-unsplash.jpg">
 			<div class=>
-				<p id='paragraph'>
-				 A final year student currently studying Bachelor of Technology (B.Tech) with Information Technology stream at the <a href="http://www.imsec.ac.in/">IMS Engineering College</a>(AKTU). Enthusiastic Software Engineer , Strong in design and integration with intuitive problem-solving skills. Proficient in C, python , HTML5, CCS3, Javascript, DOM ,QT and SQL. Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions.
+				<p id='paragraph' name="about">
+				 A final year student currently studying Bachelor of Technology (B.Tech) with Information Technology stream at the <a id="icon"href="http://www.imsec.ac.in/">IMS Engineering College</a>(AKTU). Enthusiastic Software Engineer , Strong in design and integration with intuitive problem-solving skills. Proficient in C, python , HTML5, CCS3, Javascript, DOM ,QT, Django framework, ORM and sql.Also have understanding in software engineering, Agile methodologies, SDLC and STLC. Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions.
 				</p>
 			</div>
 	</div>
@@ -72,7 +73,10 @@
             <span class="iconify" data-icon="simple-icons:coursera" data-inline="false"></span><a href="https://www.coursera.org/account/accomplishments/certificate/RWD5G89HLKTR" class="text-dark"> Python Data Structure</a>
           </li>
           <li>
-             <span class="iconify" data-icon="simple-icons:coursera" data-inline="false"></span><a href="https://coursera.org/share/a54c70751aa4985916fd6a0001a5fba1" class="text-dark">Intermediate Relational Database ans SQL</a>
+             <span class="nowrap"><span class="iconify" data-icon="simple-icons:coursera" data-inline="false"></span><a href="https://coursera.org/share/a54c70751aa4985916fd6a0001a5fba1" class="text-dark"> Intermediate Relational Database ans SQL</a></span>
+          </li>
+          <li>
+          <span class="nowrap"><span class="iconify" class="nowrap" data-icon="simple-icons:coursera" data-inline="false"></span><a href="https://www.coursera.org/account/accomplishments/verify/TUB3R86PM9Q4 class="text-dark" id="icon">HTML,CSS and JAVASCRIPT for web developers</a></span>
           </li>
           <li>
             <a href="https://courses.cognitiveclass.ai/certificates/84edc41cbd7d46e3a5cf394fe03ffae3" class="text-dark">Python 101 for Data Science</a>
@@ -111,7 +115,7 @@
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-    <p>This page is still under Process and you all are welcome for any suggestion please Mail me at <strong><a href="https://mail.google.com">khannaakash002@gmail.com</a></strong></p>
+    <p>This page is still under Process and you all are welcome for any suggestion please Mail me at <strong><a href="https://mail.google.com" id="icon">khannaakash002@gmail.com</a></strong></p>
   </div>
   <!-- Copyright -->
 </footer>
@@ -122,7 +126,7 @@ var navbar = document.getElementById("mainnavbar");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
+  if (window.pageYOffset > sticky) {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
